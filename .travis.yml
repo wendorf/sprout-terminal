@@ -4,4 +4,5 @@ install:
   - sudo gem install bundler --no-ri --no-rdoc
   - sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install
 script:
+  - defaults read com.apple.Terminal 'Default Window Settings'
   - bundle exec rake ci
